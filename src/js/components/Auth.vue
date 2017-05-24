@@ -1,8 +1,6 @@
 <template lang="pug">
 ul.nav.navbar-nav.navbar-right
   li
-    a(href='/page/about') About
-  li
     p.navbar-text(v-if='isAuthenticated', href='#')
       span.glyphicon.glyphicon-user
       span &nbsp; {{ name }}

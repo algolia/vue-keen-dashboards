@@ -8,7 +8,7 @@
 </template>
 
 <script>
-  import { chartOne, chartTwo } from '../charts';
+  import { chartTwo } from '../charts';
 
   export default {
     props: ['isAuthenticated', 'profile', 'client'],
@@ -17,7 +17,7 @@
     },
     data () {
       return {
-        charts: [chartOne, chartTwo]
+        charts: [chartTwo]
       };
     }
   }

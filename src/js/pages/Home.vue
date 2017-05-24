@@ -4,20 +4,11 @@
       .col-sm-8
         .chart-wrapper
           .chart-stage
-            chart(:chart="chartFive" :client="client")
+            chart(:chart="chartOne" :client="client")
       .col-sm-4
         .chart-wrapper
           .chart-stage
-            chart(:chart="chartSix" :client="client")
-    .row
-      .col-sm-6
-        .chart-wrapper
-          .chart-stage
-            chart(:chart="chartSeven" :client="client" :height="1280")
-      .col-sm-6
-        .chart-wrapper
-          .chart-stage
-            chart(:chart="chartEight" :client="client" :height="1280")
+            chart(:chart="chartTwo" :client="client")
   .container-fluid(v-else)
     .row
       .col-md-12
@@ -25,7 +16,7 @@
 </template>
 
 <script>
-import { chartFive, chartSix, chartSeven, chartEight } from '../charts';
+import { chartOne, chartTwo } from '../charts';
 export default {
   props: ['isAuthenticated', 'profile', 'client'],
   components: {
@@ -33,7 +24,7 @@ export default {
   },
   data () {
     return {
-      chartFive, chartSix, chartSeven, chartEight
+      chartOne, chartTwo
     };
   }
 }
