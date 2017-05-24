@@ -26,19 +26,27 @@ Clone the repo.
 Install dependencies.
 
 Set up an Auth0 lock.
-
-Add Auth0 profile rules for Keen IO API keys.
+Use the domain name for localhost.
 
 Create a .env file.
 
-AUTH_DOMAIN
-AUTH_CLIENT_ID
+AUTH_DOMAIN=<your-auth-domain>
+AUTH_CLIENT_ID=<your-auth-client-id>
+
+Add Auth0 profile rules for Keen IO API keys.
 
 ### Deploy
 
-Set environment variables.
+Create a netlify app.
 
-NODE_ENV
-HUGO_VERSION
-AUTH_DOMAIN
-AUTH_CLIENT_ID
+NODE_ENV=production
+HUGO_VERSION=0.20
+AUTH_DOMAIN=<your-auth-domain>
+AUTH_CLIENT_ID=<your-auth-client-id>
+
+Modify the domain name if you want.
+Add the domain name.
+
+Put the domain name in the Auth0 client config.
+
+Deploy.
