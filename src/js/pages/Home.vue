@@ -22,7 +22,7 @@
         .chart-wrapper
           .chart-stage
             h4 Mashboard is a secure, extensible dashboard for your Keen IO data built with Vue.js.
-            p It uses Auth0 for serverless login and Netlify for custom domain HTTPS hosting.
+            p It uses Auth0 for serverless login and comes ready to deploy to Netlify for free HTTPS hosting with custom domains. 
             p New charts and dashboard pages can be added easily.
             p
               span To create and deploy your own, follow the instructions&nbsp;

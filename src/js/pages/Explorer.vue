@@ -5,7 +5,7 @@
   .container-fluid(v-else)
     .row
       .col-md-12
-        p.alert.alert-warning The Keen IO explorer requires a master key. The demo is not configured with one. To enable the explorer for your instance, make sure your Auth0 user profiles contains a <code>app_metadata.keen_master_key</code> property.
+        p.alert.alert-warning The Keen IO explorer requires a master key. The demo is not configured with one. To enable the explorer for your instance, make sure your Auth0 user profiles contain a <code>app_metadata.keen_master_key</code> property.
 </template>
 
 <script>

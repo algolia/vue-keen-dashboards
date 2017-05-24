@@ -1,5 +1,9 @@
 export function login() {
-  window.lock.show();
+  if (window.lock) {
+    window.lock.show();
+  } else {
+    alert('Auth0 integration is not configured, see the console for more information.');
+  }
 }
 
 export function logout() {
