@@ -2,12 +2,12 @@
 
 Mashboard is a secure, extensible dashboard for your [Keen IO](https://keen.io/) data built with [Vue.js](https://vuejs.org).
 
-It uses [Auth0](https://auth0.com/) for serverless login and comes ready to deploy to [Netlify](https://netlify.com/) for free HTTPS hosting (with custom domains!).
+It uses [Auth0](https://auth0.com/) for serverless login and comes ready to deploy to [Netlify](https://netlify.com/) for free HTTPS hosting with custom domains.
 
 This project solves a number of challenges traditionally associated with dashboard and static site hosting:
 
 - API Keys are not discoverable by a logged out user. They are fetched from the user's Auth0 profile after login.
-- Everything is served over HTTPS.
+- All data travels over HTTPS.
 - No server is required.
 
 It takes about 10 minutes to set up your own instance. You will need to create Keen IO, Auth0 and Netlify accounts if you don't have them already.
