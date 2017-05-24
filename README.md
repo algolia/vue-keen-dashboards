@@ -8,11 +8,11 @@ Mashboard is a mashup of a few friendly APIs:
 - [Auth0](https://auth0.com/) for serverless login
 - [Netlify](https://netlify.com/) for free HTTPS hosting with custom domains
 
-This project solves a number of challenges traditionally associated with dashboard and static site hosting:
+This project addresses a number of pain points traditionally associated with dashboard hosting:
 
-- API Keys are not discoverable by a logged out user. They are fetched from the user's Auth0 profile after login.
-- All data travels over HTTPS.
-- No server is required.
+- API keys need to stay private until the user is authenticated.
+- All data should travel over HTTPS.
+- Running a server is annoying.
 
 It takes about 10 minutes to set up your own instance. You will need to create Keen IO, Auth0 and Netlify accounts if you don't have them already.
 
