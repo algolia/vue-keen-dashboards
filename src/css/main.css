@@ -1,0 +1,29 @@
+@import "imports/reset.css";
+
+:root {
+  --dark-purple: #111940;
+  --royal-blue: #3369E7;
+  --titan-white: #F8FAFF;
+}
+
+body {
+  background-color: var(--titan-white);
+}
+
+.chart-wrapper .chart-notes {
+  background-color: var(--titan-white);
+}
+
+body.application .navbar-inverse {
+  background-color: var(--dark-purple);
+  border-color: #666;
+}
+
+body.application .navbar-inverse.navbar-blue {
+  background-color: var(--royal-blue);
+  border-color: #666;
+}
+
+.chart-stage {
+  min-height: 240px;
+}
