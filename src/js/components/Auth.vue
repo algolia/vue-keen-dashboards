@@ -27,7 +27,7 @@ export default {
   computed: {
     name () {
       if (this.profile) {
-        return this.profile.name;
+        return this.profile.user_metadata.name;
       }
     }
   }

@@ -7,7 +7,9 @@ import { storeLogin, isAuthenticated, getProfile } from './auth';
 
 Vue.use(VueRouter);
 
-window.lock = new window.Auth0Lock(config.authClientId, config.authDomain);
+window.lock = new window.Auth0Lock(config.authClientId, config.authDomain, {
+  rememberLastLogin: false
+});
 window.lock.on('authenticated', function(authResult) {
   storeLogin(authResult);
   appVue.isAuthenticated = true;
