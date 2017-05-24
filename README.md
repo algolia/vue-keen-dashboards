@@ -20,11 +20,11 @@ See the demo: https://mashboard.dzello.com/
 
 ## Features
 
-It's secure. API keys are never exposed and all data travels over HTTPS. You can even implement different security for different users using Auth0 primitives.
-
 Adding new charts and dashboards is as simple as extending or copy existing Vue.js components.
 
 The underlying static site is built with [hugo](https://gohugo.io/). You can add new pages and do anything that Hugo can do, with lightning-fast rebuilt times.
+
+It's secure. API keys for Keen IO are only sent to the browser once the user has authentication. All data travels over HTTPS.
 
 ## Development
 
