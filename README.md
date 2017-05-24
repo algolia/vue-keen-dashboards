@@ -2,6 +2,8 @@
 
 Mashboard is a secure, extensible dashboard for your [Keen IO](https://keen.io/) data built with [Vue.js](https://vuejs.org).
 
+![demo screenshot](https://cl.ly/3u1e2n0G2N3q/Screenshot%202017-05-24%2014.50.24.png)
+
 Mashboard is a mashup of a few friendly APIs:
 
 - [Keen IO](https://keen.io/) for data collection and visualization
