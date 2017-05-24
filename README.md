@@ -95,6 +95,8 @@ For more details about these steps, see the [Auth0 JavaScript Quickstart Guide](
 
 Create a [Keen IO account](https://keen.io/) and create a new project if you don't have one already.
 
+![new keen project](https://cl.ly/1B363R1a1o1x/Screenshot%202017-05-24%2014.49.44.png)
+
 The "Access" tab of your Keen IO dashboard contains several pieces of information you'll need - Project ID, Read Key and Master Key (if you want to use [keen-explorer](https://github.com/keen/explorer)).
 
 Do NOT put these in your .env file.
@@ -161,6 +163,8 @@ Here's what that looks like:
 **Important:** Add your new app's Netlify or custom domain to the allowed callbacks of your Auth0 dashboard. Make sure to match http/https appropriately.
 
 ![Add callback app](https://cl.ly/0Z1H3Q0b110C/Screenshot%202017-05-24%2014.47.21.png)
+
+You should now be able to log in via Auth0 to your Netlify instance.
 
 ## Contributing
 
