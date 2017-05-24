@@ -52,36 +52,42 @@ You will not be able to log in in development or production until you do the fol
 
 ## Set up Auth0
 
-Create a free [Auth0 account](https://auth0.com/) if you don't have one already.
-
-Following all of the onboarding instructions, including creating a new application in whatever region you like.
+Create a free [Auth0 account](https://auth0.com/) if you don't have one already. Follow all of the onboarding instructions, including creating a new application in whatever region you like.
 
 Go to the "Clients" tab of the Auth0 dashboard and create a new client for a single page application.
 
-Add `http://localhost:3000` to the allowed callback URLs of the client you've created.
+![new auth0 client](https://cl.ly/0q3j1Y111u1R/Screenshot%202017-05-24%2014.16.34.png)
+
+Go to the Settings tab. Add `http://localhost:3000` to the allowed callback URLs of the new client.
 
 ![client dashboard tab](https://cl.ly/1a2E421m0i3E/Screenshot%202017-05-24%2014.04.33.png)
 
-In the Connections tab of the client, make sure to enable the "Username-Password-Authentication" connection. (If you're more familiar with Auth0 you can do any connection you want, but for just getting started this is the easiest.)
+Go to the Connections tab and enable "Username-Password-Authentication". (If you're more familiar with Auth0 you can do any connection you want, but for just getting started this is the easiest.)
 
 ![connections dashboard tab](https://cl.ly/0n1v3t2A1217/Screenshot%202017-05-24%2013.59.15.png)
 
-In the "Users" tab of your Auth0 dashboard, create a new user. Remember the email and password - this is what you will use to sign in.
+Go to the Users tab of your Auth0 dashboard and create a new user. Remember the email and password - this is what you will use to sign in.
 
 ![create new user](https://cl.ly/0w1r0i2Y3G1a/Screenshot%202017-05-24%2014.06.17.png)
 
-Go back to the "Connections" tab and click on the connect you created. The settings tab looks like this:
+Go back to the Connections tab and click on the connection you created previously. It should look like this:
 
 ![settings tab](https://cl.ly/3X1C1g272P2r/Screenshot%202017-05-24%2014.07.58.png)
 
-Add two pieces of information to a new `.env` file in the same folder as the repository. The file should look like exactly like this:
+Add the domain and client ID to a new `.env` file in the root of the repository you cloned. The file should look like exactly like this:
 
 ```
 AUTH_DOMAIN=<your-auth-domain>
 AUTH_CLIENT_ID=<your-auth-client-id>
 ```
 
-Restart your development application. There should be no warnings in the console and you should be able to sign in. You will not yet see any charts or dashboards, as we have not configured Keen IO yet.
+Restart your development application.
+
+```
+yarn start
+```
+
+There should be no warnings in the console and you should now be able to sign in. You will not yet see any charts or dashboards, as we have not configured Keen IO yet.
 
 For more details about these steps, see the [Auth0 JavaScript Quickstart Guide](https://auth0.com/docs/quickstart/spa/vanillajs). You can also read more information about [Auth0 lock](https://auth0.com/docs/libraries/lock/v10).
 
