@@ -10,6 +10,6 @@ export default [
   { path: '/login', component: Login, name: 'login' },
   { path: '/dashboards/one', component: PageOne, name: 'one' },
   { path: '/dashboards/two', component: PageTwo, name: 'two' },
-  { path: '/dashboards/explorer', component: Explorer, name: 'explorer' },
+  { path: '/explorer', component: Explorer, name: 'explorer' },
   { path: '*', component: NotFound }
 ];

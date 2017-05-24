@@ -1,7 +1,7 @@
 <template lang="pug">
 .container-fluid
   .row
-    .col-sm-6(v-for="(chart, index) in charts")
+    .col-sm-4(v-for="(chart, index) in charts")
       .chart-wrapper
         .chart-stage
           chart(v-bind:chart="chart" :client="client")

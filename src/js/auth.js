@@ -17,7 +17,7 @@ export function getProfile(cb) {
   window.lock.getProfile(idToken, function (error, profile) {
     if (error) {
       logout();
-      document.location.reload();
+      document.location.href = '/';
     } else {
       cb(profile);
     }

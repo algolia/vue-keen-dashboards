@@ -15,8 +15,8 @@ import { login, logout } from '../auth';
 export default {
   props: ['isAuthenticated', 'profile'],
   methods: {
-    login: () => login(),
-    logout: () => logout()
+    login: login,
+    logout: logout
   },
   data: function () {
     return {
@@ -25,7 +25,7 @@ export default {
   computed: {
     name () {
       if (this.profile) {
-        return this.profile.user_metadata.name;
+        return this.profile.user_metadata.name || this.profile.name;
       }
     }
   }

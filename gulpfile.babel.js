@@ -54,6 +54,7 @@ gulp.task('server', ['hugo', 'css', 'js', 'copy_redirects'], () => {
     notify: false
   });
   gulp.watch('./src/js/**/*.js', ['js']);
+  gulp.watch('./src/js/**/*.vue', ['js']);
   gulp.watch('./src/css/**/*.css', ['css']);
   gulp.watch('./site/**/*', ['hugo']);
 });
