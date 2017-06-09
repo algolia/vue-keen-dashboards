@@ -9,7 +9,7 @@
         span.icon-bar
       router-link.navbar-brand(:to="{ name: 'home' }")
         span.glyphicon.glyphicon-dashboard
-        span &nbsp; Mashboard
+        span &nbsp; vue-keen-dashboards
     .navbar-collapse.collapse
       ul.nav.navbar-nav(v-if="isAuthenticated")
         li.dropdown
@@ -26,7 +26,7 @@
       auth(:profile='profile', :is-authenticated='isAuthenticated')
       ul.nav.navbar-nav.navbar-right
         li
-          a(href="https://github.com/dzello/mashboard" target="_blank") Get the code
+          a(href="https://github.com/dzello/vue-keen-dashboards" target="_blank") Get the code
 </template>
 
 <script>

@@ -8,7 +8,7 @@
       .col-sm-4
         .chart-wrapper
           .chart-stage
-            h4 This is the logged in home page of your mashboard.
+            h4 This is the logged in home page.
             p You can add more charts in <code>src/pages/Home.vue</code>.
             p You can create pages by creating new components and linking them in <code>src/js/routes.js</code>.
     .row
@@ -21,12 +21,12 @@
       .col-sm-4
         .chart-wrapper
           .chart-stage
-            h4 Mashboard is a secure, extensible dashboard for your Keen IO data built with Vue.js.
-            p It uses Auth0 for serverless login and comes ready to deploy to Netlify for free HTTPS hosting with custom domains. 
+            h4 vue-keen-dashboards is a secure, extensible dashboard for your Keen IO data built with Vue.js.
+            p It uses Auth0 for serverless login and comes ready to deploy to Netlify for free HTTPS hosting with custom domains.
             p New charts and dashboard pages can be added easily.
             p
               span To create and deploy your own, follow the instructions&nbsp;
-              a(href="https://github.com/dzello/mashboard") on Github
+              a(href="https://github.com/dzello/vue-keen-dashboards") on Github
               span .
       .col-sm-4
         .chart-wrapper
