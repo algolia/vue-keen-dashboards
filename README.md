@@ -1,10 +1,10 @@
-# Mashboard
+# vue-keen-dashboards
 
-Mashboard is a secure, extensible dashboard for your [Keen IO](https://keen.io/) data built with [Vue.js](https://vuejs.org).
+vue-keen-dashboards is a secure, extensible dashboard boilerplate for your [Keen IO](https://keen.io/) data built with [Vue.js](https://vuejs.org). It comes ready to plug in Auth0 for authentication and it's deploy-ready to Netlify using Hugo as the static site generator.
 
 ![demo screenshot](https://cl.ly/3u1e2n0G2N3q/Screenshot%202017-05-24%2014.50.24.png)
 
-Mashboard is a mashup of a few friendly APIs:
+vue-keen-dashboards is a mashup of a few friendly APIs & services:
 
 - [Keen IO](https://keen.io/) for data collection and visualization
 - [Auth0](https://auth0.com/) for serverless login
@@ -14,11 +14,12 @@ This project addresses a number of pain points traditionally associated with das
 
 - API keys need to stay private until the user is authenticated.
 - All data should travel over HTTPS.
+- Having many charts and graphs can lead to unkempt code.
 - Running a server is annoying.
 
 It takes about 10 minutes to set up your own instance. You will need to create Keen IO, Auth0 and Netlify accounts if you don't have them already.
 
-See the demo: https://mashboard.dzello.com/
+See the demo: https://vue-keen-dashboards.dzello.com/
 
 ## Features
 
@@ -33,7 +34,7 @@ It's secure. API keys for Keen IO are only sent to the browser once the user has
 Clone the repo.
 
 ``` shell
-git clone git@github.com:dzello/mashboard.git
+git clone git@github.com:dzello/vue-keen-dashboards.git
 ```
 
 Install dependencies.
@@ -117,7 +118,7 @@ To the app_metadata section, add these fields, substituting your specific Keen I
 }
 ```
 
-Save the user. Now, when they log in, the Mashboard JavaScript application can fetch these values from their Auth0 profile and begin to make API calls.
+Save the user. Now, when they log in, the vue-keen-dashboards JavaScript application can fetch these values from their Auth0 profile and begin to make API calls.
 
 In your development environment, log out and log back in to make sure the keys are in the profile.
 
