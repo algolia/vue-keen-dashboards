@@ -21,6 +21,52 @@ It takes about 10 minutes to set up your own instance. You will need to create K
 
 See the demo: https://vue-keen-dashboards.dzello.com/
 
+## Adding charts
+
+Do this to create a chart and visualization combination:
+
+``` js
+export const chartOne = {
+  operation: 'count',
+  params: {
+    event_collection: 'pageviews',
+    timeframe: 'this_14_days',
+    interval: 'daily'
+  },
+  viz: new window.Keen.Dataviz()
+        .type('bar')
+        .title('Pageviews by day')
+};
+```
+
+Then export the chart and use it in a Vue template:
+
+```vue
+<template lang="pug">
+  .container-fluid
+    .row
+      .col-sm-8
+        .chart-wrapper
+          .chart-stage
+            chart(:chart="chartOne" :client="client")
+</template>
+
+<script>
+  import { chartOne } from '../charts';
+  export default {
+    props: ['client'],
+    components: {
+      chart: require('../components/Chart')
+    },
+    data () {
+      return {
+        chartOne
+      };
+    }
+  }
+</script>
+```
+
 ## Features
 
 Adding new charts and dashboards is as simple as extending or copy existing Vue.js components.
