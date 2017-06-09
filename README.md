@@ -2,7 +2,7 @@
 
 vue-keen-dashboards is a secure, extensible dashboard boilerplate for your [Keen IO](https://keen.io/) data built with [Vue.js](https://vuejs.org). It comes ready to plug in Auth0 for authentication and it's deploy-ready to Netlify using Hugo as the static site generator.
 
-![demo screenshot](https://cl.ly/3u1e2n0G2N3q/Screenshot%202017-05-24%2014.50.24.png)
+![demo screenshot](https://d2ppvlu71ri8gs.cloudfront.net/items/1S3P0p1p0y010R322s3x/Screenshot%202017-06-09%2013.06.41.png)
 
 vue-keen-dashboards is a mashup of a few friendly APIs & services:
 
@@ -160,9 +160,9 @@ AUTH_CLIENT_ID=<your-auth-client-id>
 Here's what that looks like:
 
 ![netlify environment variables](https://cl.ly/3y082h1w2M2M/[3b428b7cf80395ce90fc41f41609dd18]_Screenshot%202017-05-24%2014.42.00.png)
- 
+
  Trigger a build via a `git push` or in the Netlify dashboard.
- 
+
 **Important:** Add your new app's Netlify or custom domain to the allowed callbacks of your Auth0 dashboard. Make sure to match http/https appropriately.
 
 ![Add callback app](https://cl.ly/0Z1H3Q0b110C/Screenshot%202017-05-24%2014.47.21.png)
