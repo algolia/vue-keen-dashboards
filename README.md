@@ -80,7 +80,7 @@ It's secure. API keys for Keen IO are only sent to the browser once the user has
 Clone the repo.
 
 ``` shell
-git clone git@github.com:dzello/vue-keen-dashboards.git
+git clone git@github.com:algolia/vue-keen-dashboards.git
 ```
 
 Install dependencies.
